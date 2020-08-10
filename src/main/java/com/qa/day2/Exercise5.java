@@ -9,7 +9,14 @@ public class Exercise5 {
     }
 
     public static void uniqueSum(int a, int b, int c) {
-
+        int sum = a;
+        if (b != a) {
+            sum = sum + b;
+        }
+        if (c != b && c != a) {
+            sum = sum + c;
+        }
+        System.out.println(sum);
     }
 
 }
