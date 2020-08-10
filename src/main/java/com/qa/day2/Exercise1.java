@@ -45,8 +45,7 @@ public class Exercise1 {
             System.out.println("You have failed, you failed " + numOfFails + " exams. Your overall percentage was: " + percentage + "%");
         }
         else {
-            System.out.println("You have passed the exams with a percentage of: " + percentage + "%");
+            System.out.println("You have passed the exams with a percentage of: " + percentage + "%" + "\n");
         }
-        System.out.println();
     }
 }
