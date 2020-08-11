@@ -7,7 +7,7 @@ public class Exercise1 {
     }
 
     public static void methodOne() {
-        for (int A = 100; A < 200; A++) {
+        for(int A = 100; A < 200; A++) {
             System.out.println(A);
         }
     }
