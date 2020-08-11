@@ -10,7 +10,9 @@ public class Exercise10 {
     }
 
     public static void methodOne() {
-        ingredients.add("mayo", "egg", "lettuce", "bacon", "tomato");
+        ingredients.add("mayo");
+        ingredients.add("egg");
+        ingredients.add("lettuce");
         System.out.println(ingredients);
     }
 
