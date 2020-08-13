@@ -21,15 +21,17 @@ public class Exercise1 {
         showPercentage();
     }
 
-    public static void showResults() {
+    public static int showResults() {
         System.out.println("Physics score = " + physics);
         System.out.println("Chemistry score = " + chemistry);
         System.out.println("Biology score = " + biology);
         total = physics + chemistry + biology;
         System.out.println("Your total score = " + total);
+        return total;
     }
 
-    public static void showPercentage() {
+    public static String showPercentage() {
+        String result = "";
         int percentage = (total * 100) / 450;
         int numOfFails = 0;
         if (physics < 60) {
@@ -42,10 +44,13 @@ public class Exercise1 {
             numOfFails += 1;
         }
         if(numOfFails > 0) {
-            System.out.println("You have failed, you failed " + numOfFails + " exams. Your overall percentage was: " + percentage + "%");
+            result = "You have failed, you failed " + numOfFails + " exams. Your overall percentage was: " + percentage + "%";
+            System.out.println(result);
         }
         else {
-            System.out.println("You have passed the exams with a percentage of: " + percentage + "%" + "\n");
+            result = "You have passed the exams with a percentage of: " + percentage + "%" + "\n";
+            System.out.println(result);
         }
+        return result;
     }
 }
