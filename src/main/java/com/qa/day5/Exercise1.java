@@ -16,9 +16,9 @@ public class Exercise1 {
         System.out.println(cipher);
         method1("gsrh rh zm vcznkov lu gsv zgyzhs xrksvi ");
     }
-    public static void method1(String letter){
+    public static String method1(String letter) {
         String[] array = letter.split("",0);
-        String test ="";
+        String test = "";
         for (String value : array) {
             for (int i = 0; i < english.size(); i++) {
                 if (value.equals(english.get(i))) {
@@ -30,5 +30,6 @@ public class Exercise1 {
             }
         }
         System.out.println(test);
+        return test;
     };
 }
